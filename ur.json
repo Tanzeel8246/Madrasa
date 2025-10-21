@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "مدرسہ فنانس منیجر",
+    "subtitle": "مکمل مالی انتظامی نظام"
+  },
+  "navigation": {
+    "dashboard": "ڈیش بورڈ",
+    "income": "آمدنی",
+    "expenses": "اخراجات",
+    "stock": "اسٹاک کا انتظام",
+    "reports": "رپورٹس",
+    "accounts": "اکاؤنٹس",
+    "loans": "قرض",
+    "users": "صارفین کا انتظام",
+    "settings": "ترتیبات",
+    "logout": "لاگ آؤٹ"
+  },
+  "auth": {
+    "login": "لاگ ان",
+    "email": "ای میل",
+    "password": "پاس ورڈ",
+    "forgotPassword": "پاس ورڈ بھول گئے؟",
+    "signIn": "داخل ہوں",
+    "signOut": "خروج",
+    "invalidCredentials": "غلط ای میل یا پاس ورڈ",
+    "loginSuccess": "کامیابی سے لاگ ان ہو گئے"
+  },
+  "roles": {
+    "admin": "ایڈمن",
+    "manager": "منیجر",
+    "accountant": "اکاؤنٹنٹ",
+    "viewer": "ناظر"
+  },
+  "common": {
+    "add": "شامل کریں",
+    "edit": "تبدیل کریں",
+    "delete": "ڈیلیٹ کریں",
+    "save": "محفوظ کریں",
+    "cancel": "منسوخ",
+    "submit": "جمع کریں",
+    "search": "تلاش کریں",
+    "filter": "فلٹر",
+    "export": "ایکسپورٹ",
+    "print": "پرنٹ",
+    "share": "شیئر",
+    "date": "تاریخ",
+    "amount": "رقم",
+    "description": "تفصیل",
+    "category": "قسم",
+    "total": "کل",
+    "balance": "بیلنس",
+    "status": "حالت",
+    "actions": "اقدامات",
+    "loading": "لوڈ ہو رہا ہے...",
+    "noData": "کوئی ڈیٹا دستیاب نہیں",
+    "currency": "روپے"
+  },
+  "income": {
+    "title": "آمدنی کا انتظام",
+    "addIncome": "آمدنی شامل کریں",
+    "editIncome": "آمدنی تبدیل کریں",
+    "deleteIncome": "آمدنی ڈیلیٹ کریں",
+    "donorName": "عطیہ دہندہ کا نام",
+    "donorPhone": "عطیہ دہندہ کا فون",
+    "paymentMethod": "ادائیگی کا طریقہ",
+    "cash": "نقد",
+    "bank": "بینک ٹرانسفر",
+    "online": "آن لائن ادائیگی",
+    "categories": {
+      "donation": "عام عطیہ",
+      "zakat": "زکوٰۃ",
+      "sadaqah": "صدقہ",
+      "fitrana": "فطرانہ",
+      "qurbani": "قربانی فنڈ",
+      "fees": "طلباء کی فیس",
+      "other": "دیگر"
+    },
+    "generateReceipt": "رسید تیار کریں",
+    "shareReceipt": "رسید شیئر کریں",
+    "receiptGenerated": "رسید کامیابی سے تیار ہو گئی"
+  },
+  "expenses": {
+    "title": "اخراجات کا انتظام",
+    "addExpense": "اخراجات شامل کریں",
+    "editExpense": "اخراجات تبدیل کریں",
+    "deleteExpense": "اخراجات ڈیلیٹ کریں",
+    "attachBill": "بل منسلک کریں",
+    "viewBill": "بل دیکھیں",
+    "uploadBill": "بل اپ لوڈ کریں",
+    "categories": {
+      "salaries": "اساتذہ کی تنخواہ",
+      "food": "طلباء کا کھانا",
+      "utilities": "یوٹیلٹی بلز",
+      "books": "کتابیں اور اسٹیشنری",
+      "construction": "تعمیر اور مرمت",
+      "events": "تقریبات اور تہوار",
+      "transport": "نقل و حمل",
+      "other": "دیگر"
+    }
+  },
+  "dashboard": {
+    "welcome": "ڈیش بورڈ میں خوش آمدید",
+    "totalIncome": "کل آمدنی",
+    "totalExpenses": "کل اخراجات",
+    "currentBalance": "موجودہ بیلنس",
+    "thisMonth": "اس ماہ",
+    "recentTransactions": "حالیہ لین دین",
+    "quickActions": "فوری اقدامات",
+    "monthlyOverview": "ماہانہ جائزہ"
+  },
+  "reports": {
+    "title": "رپورٹس",
+    "generateReport": "رپورٹ تیار کریں",
+    "monthlyReport": "ماہانہ رپورٹ",
+    "annualReport": "سالانہ رپورٹ",
+    "incomeReport": "آمدنی رپورٹ",
+    "expenseReport": "اخراجات رپورٹ",
+    "donorReport": "عطیہ دہندگان رپورٹ",
+    "exportPDF": "پی ڈی ایف میں ایکسپورٹ",
+    "shareWhatsApp": "واٹس ایپ کے ذریعے شیئر"
+  },
+  "messages": {
+    "success": {
+      "recordAdded": "ریکارڈ کامیابی سے شامل ہو گیا",
+      "recordUpdated": "ریکارڈ کامیابی سے اپ ڈیٹ ہو گیا",
+      "recordDeleted": "ریکارڈ کامیابی سے ڈیلیٹ ہو گیا",
+      "reportGenerated": "رپورٹ کامیابی سے تیار ہو گئی"
+    },
+    "error": {
+      "generalError": "خرابی ہوئی۔ دوبارہ کوشش کریں۔",
+      "networkError": "نیٹ ورک کی خرابی۔ اپنا کنکشن چیک کریں۔",
+      "accessDenied": "رسائی مسترد۔ آپ کو اجازت نہیں ہے۔"
+    }
+  }
+}

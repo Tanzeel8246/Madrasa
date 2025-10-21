@@ -1,0 +1,92 @@
+// utils/permissions.js
+
+// Role-based access control utilities
+export const ROLES = {
+  ADMIN: 'admin',
+  MANAGER: 'manager',
+  ACCOUNTANT: 'accountant',
+  VIEWER: 'viewer'
+};
+
+export const PERMISSIONS = {
+  CREATE: 'create',
+  READ: 'read',
+  UPDATE: 'update',
+  DELETE: 'delete'
+};
+
+export const MODULES = {
+  INCOME: 'income',
+  EXPENSES: 'expenses',
+  STOCK: 'stock',
+  REPORTS: 'reports',
+  ACCOUNTS: 'accounts',
+  LOANS: 'loans',
+  USERS: 'users',
+  SETTINGS: 'settings'
+};
+
+// Define role permissions matrix
+export const rolePermissions = {
+  [ROLES.ADMIN]: {
+    [MODULES.INCOME]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE],
+    [MODULES.EXPENSES]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE],
+    [MODULES.STOCK]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE],
+    [MODULES.REPORTS]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE],
+    [MODULES.ACCOUNTS]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE],
+    [MODULES.LOANS]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE],
+    [MODULES.USERS]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE],
+    [MODULES.SETTINGS]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE, PERMISSIONS.DELETE]
+  },
+  [ROLES.MANAGER]: {
+    [MODULES.INCOME]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.EXPENSES]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.STOCK]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.REPORTS]: [PERMISSIONS.CREATE, PERMISSIONS.READ],
+    [MODULES.ACCOUNTS]: [PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.LOANS]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.USERS]: [PERMISSIONS.READ],
+    [MODULES.SETTINGS]: [PERMISSIONS.READ]
+  },
+  [ROLES.ACCOUNTANT]: {
+    [MODULES.INCOME]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.EXPENSES]: [PERMISSIONS.CREATE, PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.STOCK]: [PERMISSIONS.READ],
+    [MODULES.REPORTS]: [PERMISSIONS.READ],
+    [MODULES.ACCOUNTS]: [PERMISSIONS.READ, PERMISSIONS.UPDATE],
+    [MODULES.LOANS]: [PERMISSIONS.READ],
+    [MODULES.USERS]: [],
+    [MODULES.SETTINGS]: []
+  },
+  [ROLES.VIEWER]: {
+    [MODULES.INCOME]: [PERMISSIONS.READ],
+    [MODULES.EXPENSES]: [PERMISSIONS.READ],
+    [MODULES.STOCK]: [PERMISSIONS.READ],
+    [MODULES.REPORTS]: [PERMISSIONS.READ],
+    [MODULES.ACCOUNTS]: [PERMISSIONS.READ],
+    [MODULES.LOANS]: [PERMISSIONS.READ],
+    [MODULES.USERS]: [],
+    [MODULES.SETTINGS]: []
+  }
+};
+
+// Check if user has permission for specific module and action
+export function hasPermission(userRole, module, permission) {
+  if (!userRole || !rolePermissions[userRole]) {
+    return false;
+  }
+  
+  const modulePermissions = rolePermissions[userRole][module];
+  return modulePermissions && modulePermissions.includes(permission);
+}
+
+// Get all permissions for a user role
+export function getUserPermissions(userRole) {
+  return rolePermissions[userRole] || {};
+}
+
+// Check if user can access a module
+export function canAccessModule(userRole, module) {
+  const modulePermissions = rolePermissions[userRole]?.[module];
+  return modulePermissions && modulePermissions.length > 0;
+}

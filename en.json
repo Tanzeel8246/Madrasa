@@ -1,0 +1,135 @@
+{
+  "app": {
+    "title": "Madrasa Finance Manager",
+    "subtitle": "Complete Financial Management System"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "income": "Income",
+    "expenses": "Expenses",
+    "stock": "Stock Management",
+    "reports": "Reports",
+    "accounts": "Accounts",
+    "loans": "Loans",
+    "users": "User Management",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "invalidCredentials": "Invalid email or password",
+    "loginSuccess": "Login successful"
+  },
+  "roles": {
+    "admin": "Admin",
+    "manager": "Manager",
+    "accountant": "Accountant",
+    "viewer": "Viewer"
+  },
+  "common": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "print": "Print",
+    "share": "Share",
+    "date": "Date",
+    "amount": "Amount",
+    "description": "Description",
+    "category": "Category",
+    "total": "Total",
+    "balance": "Balance",
+    "status": "Status",
+    "actions": "Actions",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "currency": "Rs"
+  },
+  "income": {
+    "title": "Income Management",
+    "addIncome": "Add Income",
+    "editIncome": "Edit Income",
+    "deleteIncome": "Delete Income",
+    "donorName": "Donor Name",
+    "donorPhone": "Donor Phone",
+    "paymentMethod": "Payment Method",
+    "cash": "Cash",
+    "bank": "Bank Transfer",
+    "online": "Online Payment",
+    "categories": {
+      "donation": "General Donation",
+      "zakat": "Zakat",
+      "sadaqah": "Sadaqah",
+      "fitrana": "Fitrana",
+      "qurbani": "Qurbani Fund",
+      "fees": "Student Fees",
+      "other": "Other"
+    },
+    "generateReceipt": "Generate Receipt",
+    "shareReceipt": "Share Receipt",
+    "receiptGenerated": "Receipt generated successfully"
+  },
+  "expenses": {
+    "title": "Expense Management",
+    "addExpense": "Add Expense",
+    "editExpense": "Edit Expense",
+    "deleteExpense": "Delete Expense",
+    "attachBill": "Attach Bill",
+    "viewBill": "View Bill",
+    "uploadBill": "Upload Bill",
+    "categories": {
+      "salaries": "Teachers' Salaries",
+      "food": "Students' Food",
+      "utilities": "Utility Bills",
+      "books": "Books & Stationery",
+      "construction": "Construction & Repair",
+      "events": "Events & Ceremonies",
+      "transport": "Transportation",
+      "other": "Other"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome to Dashboard",
+    "totalIncome": "Total Income",
+    "totalExpenses": "Total Expenses",
+    "currentBalance": "Current Balance",
+    "thisMonth": "This Month",
+    "recentTransactions": "Recent Transactions",
+    "quickActions": "Quick Actions",
+    "monthlyOverview": "Monthly Overview"
+  },
+  "reports": {
+    "title": "Reports",
+    "generateReport": "Generate Report",
+    "monthlyReport": "Monthly Report",
+    "annualReport": "Annual Report",
+    "incomeReport": "Income Report",
+    "expenseReport": "Expense Report",
+    "donorReport": "Donor Report",
+    "exportPDF": "Export to PDF",
+    "shareWhatsApp": "Share via WhatsApp"
+  },
+  "messages": {
+    "success": {
+      "recordAdded": "Record added successfully",
+      "recordUpdated": "Record updated successfully",
+      "recordDeleted": "Record deleted successfully",
+      "reportGenerated": "Report generated successfully"
+    },
+    "error": {
+      "generalError": "An error occurred. Please try again.",
+      "networkError": "Network error. Please check your connection.",
+      "accessDenied": "Access denied. You don't have permission."
+    }
+  }
+}
